@@ -38,7 +38,7 @@ class VideoFileReader:
         return self._video_fd.get_meta_data()["size"]
 
     def get_frame_count(self):
-        return self._video_fd.get_length()
+        return self._video_fd.count_frames()
 
     def get_frame_width(self):
         return self.get_frame_size()[0]
